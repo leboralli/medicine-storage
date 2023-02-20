@@ -13,7 +13,9 @@ const medicineSchema = new mongoose.Schema({
     type: String,
     required: true
   }
-});
+},
+  { timestamps: true }
+);
 
 const Medicine = mongoose.model('Medicine', medicineSchema);
 
