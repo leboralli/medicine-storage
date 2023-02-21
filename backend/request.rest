@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/list
+Content-Type: application/json
+
+{
+  "name": "Paracetamol",
+  "quantity": 100,
+  "description": "Paracetamol is a pain reliever and a fever reducer.",
+}
