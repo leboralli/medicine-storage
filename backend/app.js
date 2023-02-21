@@ -9,8 +9,12 @@ app.use(express.json());
 const conn = require('./db/conn');
 conn();
 
-app.listen(3000, () => {
-    console.log('Servidor iniciado na porta 3000');
+// Routes
+const router = require('./routes/router');
+app.use('/api', router);
+
+app.listen(3001, () => {
+    console.log('Servidor iniciado na porta 3001');
 });
 
 
